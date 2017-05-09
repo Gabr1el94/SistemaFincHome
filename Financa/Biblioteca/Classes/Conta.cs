@@ -12,7 +12,11 @@ namespace Biblioteca.Classes
         private Double Salario_conta;
         private DateTime Data_salario;
         private Cliente Cod_client;
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> origin/master
 
         public int Cod_Conta
         {

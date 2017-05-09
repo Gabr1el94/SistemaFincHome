@@ -1,4 +1,5 @@
 c:\users\gabriel soares\documents\visual studio 2015\Projects\Financa\Financa\bin\Debug\Financa.exe.config
+<<<<<<< HEAD
 C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Financa\bin\Debug\Financa.exe
 C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Financa\bin\Debug\Financa.pdb
 C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Financa\obj\Debug\Financa.csprojResolveAssemblyReference.cache
@@ -7,3 +8,5 @@ C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Financa\ob
 C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Financa\obj\Debug\Financa.csproj.GenerateResource.Cache
 C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Financa\obj\Debug\Financa.exe
 C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Financa\obj\Debug\Financa.pdb
+=======
+>>>>>>> origin/master
