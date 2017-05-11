@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Classes\Cliente\InterfaceCliente.cs" />
     <Compile Include="ConexaoSqlServer.cs" />
     <Compile Include="Classes\Categoria\Categoria.cs" />
@@ -50,12 +49,6 @@
     <Compile Include="Classes\Despesas\Despesas.cs" />
     <Compile Include="Classes\Financa\Financa.cs" />
     <Compile Include="Classes\Recebimento\Recebimento.cs" />
-=======
-    <Compile Include="Class1.cs" />
-    <Compile Include="Classes\Categoria.cs" />
-    <Compile Include="Classes\Cliente.cs" />
-    <Compile Include="Classes\Conta.cs" />
->>>>>>> origin/master
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
