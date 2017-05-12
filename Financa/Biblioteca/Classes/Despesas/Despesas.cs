@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca.Classes
 {
-    class Despesas
+    public class Despesas
     {
         private int Cod_des;
         private string Descricao_des;

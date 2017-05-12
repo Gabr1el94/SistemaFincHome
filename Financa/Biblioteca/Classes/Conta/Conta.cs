@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Biblioteca.Classes
 {
-    class Conta
+    public class Conta
     {
         private int Cod_conta;
         private Double Salario_conta;
         private DateTime Data_salario;
-        private Cliente Cod_client;
+        private Cliente.Cliente Cod_client;
         
 
         public int Cod_Conta
@@ -32,7 +32,7 @@ namespace Biblioteca.Classes
             set { Data_salario = value; }
         }
 
-        public Cliente Cod_Cliente
+        public Cliente.Cliente Cod_Cliente
         {
             get { return Cod_client; }
             set { Cod_client = value; }

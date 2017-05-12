@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca.Classes
 {
-    class Financa
+   public class Financa
     {
         private int Cod_fin;
         private DateTime DtEmissao_fin;

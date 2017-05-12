@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Biblioteca.Classes
+namespace Biblioteca.Classes.Cliente
 {
-    class Cliente
+    public class Cliente
     {
         private int Cod_client;
         private string Nome_client;
+        private string Senha_client;
         private string Cpf_client;
         private DateTime DtNasciment_client;
         private string Email_client;
@@ -27,13 +28,18 @@ namespace Biblioteca.Classes
             set { Nome_client = value; }
         }
 
+        public string Senha_Client
+        {
+            get { return Senha_client; }
+            set { Senha_client = value; }
+        }
         public string Cpf_Cliente
         {
             get { return Cpf_client; }
             set { Cpf_client = value; }
         }
 
-        public DateTime MyProperty
+        public DateTime DtNasciment_Client
         {
             get { return DtNasciment_client; }
             set { DtNasciment_client = value; }

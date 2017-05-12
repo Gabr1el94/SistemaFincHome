@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca.Classes
 {
-    class Categoria
+   public class Categoria
     {
         private int Cod_categoria;
         private string Descricao_categoria;

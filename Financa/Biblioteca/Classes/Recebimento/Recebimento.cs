@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Biblioteca.Classes
+namespace Biblioteca.Classes.Recebimento
 {
-    class Recebimento
+    public class Recebimento
     {
         private int Cod_receb;
         private Double Valor_receb;

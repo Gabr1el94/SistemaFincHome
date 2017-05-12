@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Biblioteca.Classes.Cliente
 {
-    class InterfaceCliente
+     public interface InterfaceCliente
     {
+        void Insert(Cliente cliente);
+        void Update(Cliente cliente);
+        void Delete(Cliente cliente);
+        bool Duplicidade(Cliente cliente);
+        List<Cliente> Select(Cliente filtro);
     }
 }

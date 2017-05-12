@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Cliente\InterfaceCliente.cs" />
+    <Compile Include="Classes\Recebimento\InterfaceRecebimento.cs" />
+    <Compile Include="Classes\Recebimento\RecebimentoBDSqlServerParametros.cs" />
     <Compile Include="ConexaoSqlServer.cs" />
     <Compile Include="Classes\Categoria\Categoria.cs" />
     <Compile Include="Classes\Cliente\Cliente.cs" />

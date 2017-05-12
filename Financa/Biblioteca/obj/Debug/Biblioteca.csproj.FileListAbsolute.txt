@@ -3,3 +3,6 @@ C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Biblioteca
 C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
 C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Biblioteca\obj\Debug\Biblioteca.dll
 C:\Users\Gabriel Soares\documents\visual studio 2015\Projects\Financa\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\Financa\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\Financa\Biblioteca\obj\Debug\Biblioteca.dll
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\Financa\Biblioteca\obj\Debug\Biblioteca.pdb
