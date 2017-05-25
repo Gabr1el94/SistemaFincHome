@@ -36,16 +36,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TextSenha = new System.Windows.Forms.TextBox();
-            this.TextDT = new System.Windows.Forms.TextBox();
-            this.TextCpf = new System.Windows.Forms.TextBox();
             this.TextEmail = new System.Windows.Forms.TextBox();
             this.TextNome = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.mTxtNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.mTxtCpf = new System.Windows.Forms.MaskedTextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(191, 233);
+            this.button3.Location = new System.Drawing.Point(163, 295);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(93, 27);
             this.button3.TabIndex = 25;
@@ -54,7 +55,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(290, 233);
+            this.button2.Location = new System.Drawing.Point(262, 295);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 27);
             this.button2.TabIndex = 24;
@@ -65,7 +66,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 152);
+            this.label5.Location = new System.Drawing.Point(9, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 23;
@@ -74,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 191);
+            this.label4.Location = new System.Drawing.Point(12, 217);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 22;
@@ -113,20 +114,7 @@
             this.TextSenha.Name = "TextSenha";
             this.TextSenha.Size = new System.Drawing.Size(136, 20);
             this.TextSenha.TabIndex = 18;
-            // 
-            // TextDT
-            // 
-            this.TextDT.Location = new System.Drawing.Point(12, 168);
-            this.TextDT.Name = "TextDT";
-            this.TextDT.Size = new System.Drawing.Size(136, 20);
-            this.TextDT.TabIndex = 17;
-            // 
-            // TextCpf
-            // 
-            this.TextCpf.Location = new System.Drawing.Point(12, 207);
-            this.TextCpf.Name = "TextCpf";
-            this.TextCpf.Size = new System.Drawing.Size(136, 20);
-            this.TextCpf.TabIndex = 16;
+            this.TextSenha.UseSystemPasswordChar = true;
             // 
             // TextEmail
             // 
@@ -146,7 +134,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(392, 233);
+            this.button1.Location = new System.Drawing.Point(364, 295);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 27);
             this.button1.TabIndex = 13;
@@ -154,11 +142,40 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // mTxtNascimento
+            // 
+            this.mTxtNascimento.Location = new System.Drawing.Point(12, 182);
+            this.mTxtNascimento.Mask = "00/00/0000";
+            this.mTxtNascimento.Name = "mTxtNascimento";
+            this.mTxtNascimento.Size = new System.Drawing.Size(136, 20);
+            this.mTxtNascimento.TabIndex = 26;
+            // 
+            // mTxtCpf
+            // 
+            this.mTxtCpf.Location = new System.Drawing.Point(12, 233);
+            this.mTxtCpf.Mask = "000,000,000-00";
+            this.mTxtCpf.Name = "mTxtCpf";
+            this.mTxtCpf.Size = new System.Drawing.Size(136, 20);
+            this.mTxtCpf.TabIndex = 27;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(469, 295);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(98, 27);
+            this.btnLimpar.TabIndex = 28;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 272);
+            this.ClientSize = new System.Drawing.Size(571, 325);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.mTxtCpf);
+            this.Controls.Add(this.mTxtNascimento);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
@@ -167,13 +184,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TextSenha);
-            this.Controls.Add(this.TextDT);
-            this.Controls.Add(this.TextCpf);
             this.Controls.Add(this.TextEmail);
             this.Controls.Add(this.TextNome);
             this.Controls.Add(this.button1);
             this.Name = "CadastroCliente";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.CadastroCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,11 +205,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TextSenha;
-        private System.Windows.Forms.TextBox TextDT;
-        private System.Windows.Forms.TextBox TextCpf;
         private System.Windows.Forms.TextBox TextEmail;
         private System.Windows.Forms.TextBox TextNome;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MaskedTextBox mTxtNascimento;
+        private System.Windows.Forms.MaskedTextBox mTxtCpf;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
 
