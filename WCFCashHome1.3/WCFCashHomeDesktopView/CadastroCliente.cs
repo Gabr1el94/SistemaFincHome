@@ -24,6 +24,7 @@ namespace WCFCashHomeDesktopView
             InitializeComponent();
             
             
+            
         }
 
         //Criação da variável para aplicação de Domínio diretório 
