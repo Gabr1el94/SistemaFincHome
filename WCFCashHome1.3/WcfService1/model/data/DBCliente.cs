@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
-namespace WcfService1.model.data
+namespace WCFCashHomeService.model.data
 {
     public class DBCliente : DBConn
 

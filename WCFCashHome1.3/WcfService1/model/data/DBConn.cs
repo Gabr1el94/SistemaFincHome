@@ -4,14 +4,14 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
-namespace WcfService1.model.data
+namespace WCFCashHomeService.model.data
 {
     public class DBConn
     {
         //tipo responsável para se trabalhar com o sqlserver
         public SqlConnection sqlConn;
         //máquina no qual estará o banco de dados
-        private const string local = "GABRIEL-PC\\SQLEXPRESS";
+        private const string local = "PC-140";
         //nome do banco de dados no qual desejamos nos comunicar
         private const string banco_de_dados = "CashHome";
         //usuário que tenha os privilégios para utilizar o banco de dados

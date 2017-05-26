@@ -27,3 +27,4 @@ C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WCF
 C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.csproj.GenerateResource.Cache
 C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.exe
 C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.pdb
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\bin\Debug\WCFCashHomeDesktopView.exe.config

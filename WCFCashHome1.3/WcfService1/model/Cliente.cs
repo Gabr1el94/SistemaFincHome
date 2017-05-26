@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Web;
 
-namespace WcfService1.model
+namespace WCFCashHomeService.model
 {
    [DataContract]
     public class Cliente

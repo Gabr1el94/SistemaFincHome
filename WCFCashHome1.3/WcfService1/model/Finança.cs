@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Web;
 
-namespace WcfService1.model
+namespace WCFCashHomeService.model
 {
     public class Finança
     {

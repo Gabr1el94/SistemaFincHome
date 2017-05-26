@@ -22,3 +22,8 @@ C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\Wcf
 C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WcfService1\obj\Debug\WCFCashHomeService.csprojResolveAssemblyReference.cache
 C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WcfService1\obj\Debug\WcfService1.dll
 C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService1\bin\WCFCashHomeService.dll.config
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService1\bin\WCFCashHomeService.dll
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService1\bin\WCFCashHomeService.pdb
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService1\obj\Debug\WCFCashHomeService.dll
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService1\obj\Debug\WCFCashHomeService.pdb

@@ -190,6 +190,7 @@
             this.Controls.Add(this.button1);
             this.Name = "CadastroCliente";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.CadastroCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

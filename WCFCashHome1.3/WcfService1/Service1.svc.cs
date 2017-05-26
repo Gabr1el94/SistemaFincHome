@@ -5,11 +5,11 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-using WcfService1.control;
-using WcfService1.model;
-using WcfService1.model.data;
+using WCFCashHomeService.control;
+using WCFCashHomeService.model;
+using WCFCashHomeService.model.data;
 
-namespace WcfService1
+namespace WCFCashHomeService
 {
     
     public class Service1 : IService1

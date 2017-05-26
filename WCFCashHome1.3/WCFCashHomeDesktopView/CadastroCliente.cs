@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WCFCashHomeDesktopView.localhost;
+
 using System.Xml.Linq;
 using System.Xml;
 using WCFCashHomeDesktopView.Dados;
@@ -22,6 +22,8 @@ namespace WCFCashHomeDesktopView
         public CadastroCliente()
         {
             InitializeComponent();
+            
+            
         }
 
         //Criação da variável para aplicação de Domínio diretório 
@@ -55,7 +57,7 @@ namespace WCFCashHomeDesktopView
 
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {/*
             try
             {
                 using (DataSet Resultado = new DataSet())
@@ -63,6 +65,7 @@ namespace WCFCashHomeDesktopView
                     Resultado.ReadXml(DadosXML(caminho) + @"Dados\Clientes.xml");
                     if (Resultado.Tables.Count == 0)
                     {
+
                         Resultado.ReadXml(DadosXML(caminho) + @"Dados\Clientes.xml");
                     }
                     else
@@ -76,63 +79,65 @@ namespace WCFCashHomeDesktopView
 
                 MessageBox.Show("Erro " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            Service1 sv = new Service1();
+          */
+            //Service1 sv = new Service1();
  
-            nome = TextNome.Text;
-            email = TextEmail.Text;
-            dataNascimento = mTxtNascimento.Text;
-            cpf = mTxtCpf.Text;
-            senha = TextSenha.Text;
+            //nome = TextNome.Text;
+            //email = TextEmail.Text;
+            //dataNascimento = mTxtNascimento.Text;
+            //cpf = mTxtCpf.Text;
+            //senha = TextSenha.Text;
 
-            string isOk = testaCamposView();
+            //string isOk = testaCamposView();
 
-            if (isOk == "Campos Válidos")
-            {
-                Cliente cliente = new Cliente()
-                {
-                    Nome = nome,
-                    Email = email,
-                    DataNascimento = dataNascimento,
-                    Cpf = cpf,
-                    Senha = senha
-                };
+            //if (isOk == "Campos Válidos")
+            //{
+            //    Cliente cliente = new Cliente()
+            //    {
+            //        Nome = nome,
+            //        Email = email,
+            //        DataNascimento = dataNascimento,
+            //        Cpf = cpf,
+            //        Senha = senha
+            //    };
 
-                string result = sv.InsertClient(cliente);
-                MessageBox.Show(result);
-                LimparTextBox(this);
+            //    string result = sv.InsertClient(cliente);
+            //    MessageBox.Show(result);
+            //    LimparTextBox(this);
 
-                Conta clienteConta = new Conta();
-                clienteConta.EmailCliente = email;
-                sv.InsertConta(clienteConta); 
+            //    Conta clienteConta = new Conta();
+            //    clienteConta.EmailCliente = email;
+            //    sv.InsertConta(clienteConta); 
 
-            }
-            else
-            {
-                MessageBox.Show(isOk);
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show(isOk);
+            //}
+
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Service1 sv = new Service1();
+           // Service1 sv = new Service1();
 
-            nome = TextNome.Text;
-            email = TextEmail.Text;
-            dataNascimento = mTxtNascimento.Text;
-            cpf = mTxtCpf.Text;
-            senha = TextSenha.Text;
+           // nome = TextNome.Text;
+           // email = TextEmail.Text;
+           // dataNascimento = mTxtNascimento.Text;
+           // cpf = mTxtCpf.Text;
+           // senha = TextSenha.Text;
 
-            Cliente cliente = new Cliente()
-            {
-                Nome = nome,
-                Email = email,
-                DataNascimento = dataNascimento,
-                Cpf = cpf,
-                Senha = senha
-            };
+           // Cliente cliente = new Cliente()
+           // {
+           //     Nome = nome,
+           //     Email = email,
+           //     DataNascimento = dataNascimento,
+           //     Cpf = cpf,
+           //     Senha = senha
+           // };
 
-           sv.ListarClientes(cliente);
+           //sv.ListarClientes(cliente);
             
         }
 
@@ -141,36 +146,41 @@ namespace WCFCashHomeDesktopView
 
         }
 
+        private void CadastroCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             string nome, email, cpf, dataNascimento, senha;
 
-            Service1 sv = new Service1();
-            Cliente cliente = new Cliente();
+            //Service1 sv = new Service1();
+            //Cliente cliente = new Cliente();
 
-            nome = TextNome.Text;
-            email = TextEmail.Text;
-            dataNascimento = mTxtNascimento.Text;
-            cpf = mTxtCpf.Text;
-            senha = TextSenha.Text;
+            //nome = TextNome.Text;
+            //email = TextEmail.Text;
+            //dataNascimento = mTxtNascimento.Text;
+            //cpf = mTxtCpf.Text;
+            //senha = TextSenha.Text;
 
-            string isOk = testaCamposView();
+            //string isOk = testaCamposView();
 
-            if (isOk == "Campos Válidos")
-            {
-                cliente.Nome = nome;
-                cliente.Email = email;
-                cliente.DataNascimento = dataNascimento;
-                cliente.Cpf = cpf;
-                cliente.Senha = senha;
+            //if (isOk == "Campos Válidos")
+            //{
+            //    cliente.Nome = nome;
+            //    cliente.Email = email;
+            //    cliente.DataNascimento = dataNascimento;
+            //    cliente.Cpf = cpf;
+            //    cliente.Senha = senha;
 
-                string result = sv.UpdateClient(cliente);
-                MessageBox.Show(result); 
-            }
-            else
-            {
-                MessageBox.Show(isOk);
-            }
+            //    string result = sv.UpdateClient(cliente);
+            //    MessageBox.Show(result);
+            //}
+            //else
+            //{
+            //    MessageBox.Show(isOk);
+            //}
         }
 
         private string testaCamposView()
@@ -211,7 +221,7 @@ namespace WCFCashHomeDesktopView
                 return "Email Inválido!";
             }
 
-            Regex exCpf = new Regex(@"^(\d{3}.\d{3}/.\d{3}-\d/{2})");
+            Regex exCpf = new Regex(@"^(\d{3}/.\d{3}/.\d{3}/-\d{2}/)");
             if (!(exCpf.IsMatch(cpf)))
             {
                 return "Cpf Inválido!";

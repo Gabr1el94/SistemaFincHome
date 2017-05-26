@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using WcfService1.model;
-using WcfService1.model.data;
+using WCFCashHomeService.model;
+using WCFCashHomeService.model.data;
 
-namespace WcfService1.control
+namespace WCFCashHomeService.control
 {
     public class ClienteControle
     {
