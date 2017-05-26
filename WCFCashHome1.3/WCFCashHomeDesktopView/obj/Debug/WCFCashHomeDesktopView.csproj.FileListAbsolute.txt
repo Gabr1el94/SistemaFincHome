@@ -28,3 +28,12 @@ C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WCF
 C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.exe
 C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.pdb
 C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\bin\Debug\WCFCashHomeDesktopView.exe.config
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\bin\Debug\WCFCashHomeDesktopView.exe
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\bin\Debug\WCFCashHomeDesktopView.pdb
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.CadastroCliente.resources
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.Login.resources
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.Properties.Resources.resources
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.csproj.GenerateResource.Cache
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.exe
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WCFCashHomeDesktopView\obj\Debug\WCFCashHomeDesktopView.pdb

@@ -8,10 +8,10 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using System.Xml.Linq;
 using System.Xml;
 using WCFCashHomeDesktopView.Dados;
+using WCFCashHomeDesktopView.localhost2;
 
 namespace WCFCashHomeDesktopView
 {
@@ -22,8 +22,7 @@ namespace WCFCashHomeDesktopView
         public CadastroCliente()
         {
             InitializeComponent();
-            
-            
+            localhost2.Service1 sv = new localhost2.Service1();
             
         }
 
@@ -81,65 +80,66 @@ namespace WCFCashHomeDesktopView
                 MessageBox.Show("Erro " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
           */
-            //Service1 sv = new Service1();
- 
-            //nome = TextNome.Text;
-            //email = TextEmail.Text;
-            //dataNascimento = mTxtNascimento.Text;
-            //cpf = mTxtCpf.Text;
-            //senha = TextSenha.Text;
 
-            //string isOk = testaCamposView();
+            localhost2.Service1 sv = new localhost2.Service1();
 
-            //if (isOk == "Campos Válidos")
-            //{
-            //    Cliente cliente = new Cliente()
-            //    {
-            //        Nome = nome,
-            //        Email = email,
-            //        DataNascimento = dataNascimento,
-            //        Cpf = cpf,
-            //        Senha = senha
-            //    };
+            nome = TextNome.Text;
+            email = TextEmail.Text;
+            dataNascimento = mTxtNascimento.Text;
+            cpf = mTxtCpf.Text;
+            senha = TextSenha.Text;
 
-            //    string result = sv.InsertClient(cliente);
-            //    MessageBox.Show(result);
-            //    LimparTextBox(this);
+            string isOk = testaCamposView();
 
-            //    Conta clienteConta = new Conta();
-            //    clienteConta.EmailCliente = email;
-            //    sv.InsertConta(clienteConta); 
+            if (isOk == "Campos Válidos")
+            {
+                Cliente cliente = new Cliente()
+                {
+                    Nome = nome,
+                    Email = email,
+                    DataNascimento = dataNascimento,
+                    Cpf = cpf,
+                    Senha = senha
+                };
 
-            //}
-            //else
-            //{
-            //    MessageBox.Show(isOk);
-            //}
+                string result = sv.InsertClient(cliente);
+                MessageBox.Show(result);
+                LimparTextBox(this);
+
+                Conta clienteConta = new Conta();
+                clienteConta.EmailCliente = email;
+                sv.InsertConta(clienteConta);
+
+            }
+            else
+            {
+                MessageBox.Show(isOk);
+            }
 
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-           // Service1 sv = new Service1();
+            localhost2.Service1 sv = new localhost2.Service1();
 
-           // nome = TextNome.Text;
-           // email = TextEmail.Text;
-           // dataNascimento = mTxtNascimento.Text;
-           // cpf = mTxtCpf.Text;
-           // senha = TextSenha.Text;
+            nome = TextNome.Text;
+            email = TextEmail.Text;
+            dataNascimento = mTxtNascimento.Text;
+            cpf = mTxtCpf.Text;
+            senha = TextSenha.Text;
 
-           // Cliente cliente = new Cliente()
-           // {
-           //     Nome = nome,
-           //     Email = email,
-           //     DataNascimento = dataNascimento,
-           //     Cpf = cpf,
-           //     Senha = senha
-           // };
+            Cliente cliente = new Cliente()
+            {
+                Nome = nome,
+                Email = email,
+                DataNascimento = dataNascimento,
+                Cpf = cpf,
+                Senha = senha
+            };
 
-           //sv.ListarClientes(cliente);
-            
+            sv.ListarClientes(cliente);
+
         }
 
         private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -156,32 +156,32 @@ namespace WCFCashHomeDesktopView
         {
             string nome, email, cpf, dataNascimento, senha;
 
-            //Service1 sv = new Service1();
-            //Cliente cliente = new Cliente();
+            localhost2.Service1 sv = new localhost2.Service1();
+            localhost2.Cliente cliente = new localhost2.Cliente();
 
-            //nome = TextNome.Text;
-            //email = TextEmail.Text;
-            //dataNascimento = mTxtNascimento.Text;
-            //cpf = mTxtCpf.Text;
-            //senha = TextSenha.Text;
+            nome = TextNome.Text;
+            email = TextEmail.Text;
+            dataNascimento = mTxtNascimento.Text;
+            cpf = mTxtCpf.Text;
+            senha = TextSenha.Text;
 
-            //string isOk = testaCamposView();
+            string isOk = testaCamposView();
 
-            //if (isOk == "Campos Válidos")
-            //{
-            //    cliente.Nome = nome;
-            //    cliente.Email = email;
-            //    cliente.DataNascimento = dataNascimento;
-            //    cliente.Cpf = cpf;
-            //    cliente.Senha = senha;
+            if (isOk == "Campos Válidos")
+            {
+                cliente.Nome = nome;
+                cliente.Email = email;
+                cliente.DataNascimento = dataNascimento;
+                cliente.Cpf = cpf;
+                cliente.Senha = senha;
 
-            //    string result = sv.UpdateClient(cliente);
-            //    MessageBox.Show(result);
-            //}
-            //else
-            //{
-            //    MessageBox.Show(isOk);
-            //}
+                string result = sv.UpdateClient(cliente);
+                MessageBox.Show(result);
+            }
+            else
+            {
+                MessageBox.Show(isOk);
+            }
         }
 
         private string testaCamposView()
@@ -221,13 +221,13 @@ namespace WCFCashHomeDesktopView
             {
                 return "Email Inválido!";
             }
-
+            /*
             Regex exCpf = new Regex(@"^(\d{3}/.\d{3}/.\d{3}/-\d{2}/)");
             if (!(exCpf.IsMatch(cpf)))
             {
                 return "Cpf Inválido!";
             }
-
+            */
             Regex exNascimento = new Regex(@"^(\d{2}//\d{2}//\d{4})");
             if (!(exNascimento.IsMatch(dataNascimento)))
             {

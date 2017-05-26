@@ -49,7 +49,7 @@
             this.button3.Location = new System.Drawing.Point(191, 233);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(93, 27);
-            this.button3.TabIndex = 25;
+            this.button3.TabIndex = 5;
             this.button3.Text = "Adicionar Conta";
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -58,7 +58,7 @@
             this.button2.Location = new System.Drawing.Point(290, 233);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 27);
-            this.button2.TabIndex = 24;
+            this.button2.TabIndex = 6;
             this.button2.Text = "Atualizar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -113,14 +113,14 @@
             this.TextSenha.Location = new System.Drawing.Point(12, 121);
             this.TextSenha.Name = "TextSenha";
             this.TextSenha.Size = new System.Drawing.Size(136, 20);
-            this.TextSenha.TabIndex = 18;
+            this.TextSenha.TabIndex = 2;
             // 
             // TextEmail
             // 
             this.TextEmail.Location = new System.Drawing.Point(12, 77);
             this.TextEmail.Name = "TextEmail";
             this.TextEmail.Size = new System.Drawing.Size(136, 20);
-            this.TextEmail.TabIndex = 15;
+            this.TextEmail.TabIndex = 1;
             this.TextEmail.TextChanged += new System.EventHandler(this.TextEmail_TextChanged);
             // 
             // TextNome
@@ -128,7 +128,7 @@
             this.TextNome.Location = new System.Drawing.Point(12, 25);
             this.TextNome.Name = "TextNome";
             this.TextNome.Size = new System.Drawing.Size(136, 20);
-            this.TextNome.TabIndex = 14;
+            this.TextNome.TabIndex = 0;
             this.TextNome.TextChanged += new System.EventHandler(this.textBoxnome_TextChanged);
             // 
             // button1
@@ -136,7 +136,7 @@
             this.button1.Location = new System.Drawing.Point(392, 233);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 27);
-            this.button1.TabIndex = 13;
+            this.button1.TabIndex = 7;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -146,7 +146,7 @@
             this.button4.Location = new System.Drawing.Point(208, 21);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 26;
+            this.button4.TabIndex = 8;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -157,7 +157,7 @@
             this.mTxtNascimento.Mask = "00/00/0000";
             this.mTxtNascimento.Name = "mTxtNascimento";
             this.mTxtNascimento.Size = new System.Drawing.Size(135, 20);
-            this.mTxtNascimento.TabIndex = 27;
+            this.mTxtNascimento.TabIndex = 3;
             this.mTxtNascimento.ValidatingType = typeof(System.DateTime);
             // 
             // mTxtCpf
@@ -166,7 +166,7 @@
             this.mTxtCpf.Mask = "000,000,000-00";
             this.mTxtCpf.Name = "mTxtCpf";
             this.mTxtCpf.Size = new System.Drawing.Size(135, 20);
-            this.mTxtCpf.TabIndex = 28;
+            this.mTxtCpf.TabIndex = 4;
             this.mTxtCpf.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
             // CadastroCliente

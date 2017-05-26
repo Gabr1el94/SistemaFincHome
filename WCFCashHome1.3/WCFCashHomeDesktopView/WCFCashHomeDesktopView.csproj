@@ -63,6 +63,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\localhost2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +92,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Web References\localhost2\Cliente.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost2\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost2\Service1.wsdl" />
+    <None Include="Web References\localhost2\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\localhost2\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\localhost2\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -99,6 +121,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dados\Clientes.xml" />
+    <None Include="Web References\localhost2\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:55328/Service1.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost2\</RelPath>
+      <UpdateFromURL>http://localhost:55328/Service1.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WCFCashHomeDesktopView_localhost2_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

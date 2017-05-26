@@ -26,10 +26,10 @@ namespace WCFCashHomeDesktopView.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:54681/Service1.svc")]
-        public string WCFCashHomeDesktopView_localhost_Service1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:55328/Service1.svc")]
+        public string WCFCashHomeDesktopView_localhost2_Service1 {
             get {
-                return ((string)(this["WCFCashHomeDesktopView_localhost_Service1"]));
+                return ((string)(this["WCFCashHomeDesktopView_localhost2_Service1"]));
             }
         }
     }

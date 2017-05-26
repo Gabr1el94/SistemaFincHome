@@ -1,0 +1,6 @@
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService2\bin\WcfService2.dll.config
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService2\bin\WcfService2.dll
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService2\bin\WcfService2.pdb
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService2\obj\Debug\WcfService2.dll
+C:\Users\aluno\Documents\GitHub\SistemaFincHome\WCFCashHome1.3\WcfService2\obj\Debug\WcfService2.pdb

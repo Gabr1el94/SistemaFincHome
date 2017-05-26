@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace WCFCashHomeDesktopView.localhost {
+namespace WCFCashHomeDesktopView.localhost2 {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -27,7 +27,7 @@ namespace WCFCashHomeDesktopView.localhost {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService1", Namespace="http://tempuri.org/")]
-    public partial class BasicHttpBinding_IService1 : System.Web.Services.Protocols.SoapHttpClientProtocol {
+    public partial class Service1 : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
         private System.Threading.SendOrPostCallback InsertClientOperationCompleted;
         
@@ -42,8 +42,8 @@ namespace WCFCashHomeDesktopView.localhost {
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
-        public BasicHttpBinding_IService1() {
-            this.Url = global::WCFCashHomeDesktopView.Properties.Settings.Default.WCFCashHomeDesktopView_localhost_Service1;
+        public Service1() {
+            this.Url = global::WCFCashHomeDesktopView.Properties.Settings.Default.WCFCashHomeDesktopView_localhost2_Service1;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;
@@ -155,248 +155,7 @@ namespace WCFCashHomeDesktopView.localhost {
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/ListarClientes", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/WCFCashHomeService.model")]
-        public Cliente[] ListarClientes([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Cliente cliente) {
-            object[] results = this.Invoke("ListarClientes", new object[] {
-                        cliente});
-            return ((Cliente[])(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ListarClientesAsync(Cliente cliente) {
-            this.ListarClientesAsync(cliente, null);
-        }
-        
-        /// <remarks/>
-        public void ListarClientesAsync(Cliente cliente, object userState) {
-            if ((this.ListarClientesOperationCompleted == null)) {
-                this.ListarClientesOperationCompleted = new System.Threading.SendOrPostCallback(this.OnListarClientesOperationCompleted);
-            }
-            this.InvokeAsync("ListarClientes", new object[] {
-                        cliente}, this.ListarClientesOperationCompleted, userState);
-        }
-        
-        private void OnListarClientesOperationCompleted(object arg) {
-            if ((this.ListarClientesCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ListarClientesCompleted(this, new ListarClientesCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/PegarClientePorEmail", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public Cliente PegarClientePorEmail([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Cliente cliente) {
-            object[] results = this.Invoke("PegarClientePorEmail", new object[] {
-                        cliente});
-            return ((Cliente)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void PegarClientePorEmailAsync(Cliente cliente) {
-            this.PegarClientePorEmailAsync(cliente, null);
-        }
-        
-        /// <remarks/>
-        public void PegarClientePorEmailAsync(Cliente cliente, object userState) {
-            if ((this.PegarClientePorEmailOperationCompleted == null)) {
-                this.PegarClientePorEmailOperationCompleted = new System.Threading.SendOrPostCallback(this.OnPegarClientePorEmailOperationCompleted);
-            }
-            this.InvokeAsync("PegarClientePorEmail", new object[] {
-                        cliente}, this.PegarClientePorEmailOperationCompleted, userState);
-        }
-        
-        private void OnPegarClientePorEmailOperationCompleted(object arg) {
-            if ((this.PegarClientePorEmailCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.PegarClientePorEmailCompleted(this, new PegarClientePorEmailCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/InsertConta", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string InsertConta([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Conta cliente) {
-            object[] results = this.Invoke("InsertConta", new object[] {
-                        cliente});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void InsertContaAsync(Conta cliente) {
-            this.InsertContaAsync(cliente, null);
-        }
-        
-        /// <remarks/>
-        public void InsertContaAsync(Conta cliente, object userState) {
-            if ((this.InsertContaOperationCompleted == null)) {
-                this.InsertContaOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsertContaOperationCompleted);
-            }
-            this.InvokeAsync("InsertConta", new object[] {
-                        cliente}, this.InsertContaOperationCompleted, userState);
-        }
-        
-        private void OnInsertContaOperationCompleted(object arg) {
-            if ((this.InsertContaCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.InsertContaCompleted(this, new InsertContaCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        public new void CancelAsync(object userState) {
-            base.CancelAsync(userState);
-        }
-        
-        private bool IsLocalFileSystemWebService(string url) {
-            if (((url == null) 
-                        || (url == string.Empty))) {
-                return false;
-            }
-            System.Uri wsUri = new System.Uri(url);
-            if (((wsUri.Port >= 1024) 
-                        && (string.Compare(wsUri.Host, "localHost", System.StringComparison.OrdinalIgnoreCase) == 0))) {
-                return true;
-            }
-            return false;
-        }
-    }
-    
-    /// <remarks/>
-    // CODEGEN: The optional WSDL extension element 'PolicyReference' from namespace 'http://schemas.xmlsoap.org/ws/2004/09/policy' was not handled.
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.79.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpsBinding_IService1", Namespace="http://tempuri.org/")]
-    public partial class BasicHttpsBinding_IService1 : System.Web.Services.Protocols.SoapHttpClientProtocol {
-        
-        private System.Threading.SendOrPostCallback InsertClientOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback UpdateClientOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ListarClientesOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback PegarClientePorEmailOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback InsertContaOperationCompleted;
-        
-        private bool useDefaultCredentialsSetExplicitly;
-        
-        /// <remarks/>
-        public BasicHttpsBinding_IService1() {
-            this.Url = "https://localhost:44320/Service1.svc";
-            if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
-                this.UseDefaultCredentials = true;
-                this.useDefaultCredentialsSetExplicitly = false;
-            }
-            else {
-                this.useDefaultCredentialsSetExplicitly = true;
-            }
-        }
-        
-        public new string Url {
-            get {
-                return base.Url;
-            }
-            set {
-                if ((((this.IsLocalFileSystemWebService(base.Url) == true) 
-                            && (this.useDefaultCredentialsSetExplicitly == false)) 
-                            && (this.IsLocalFileSystemWebService(value) == false))) {
-                    base.UseDefaultCredentials = false;
-                }
-                base.Url = value;
-            }
-        }
-        
-        public new bool UseDefaultCredentials {
-            get {
-                return base.UseDefaultCredentials;
-            }
-            set {
-                base.UseDefaultCredentials = value;
-                this.useDefaultCredentialsSetExplicitly = true;
-            }
-        }
-        
-        /// <remarks/>
-        public event InsertClientCompletedEventHandler InsertClientCompleted;
-        
-        /// <remarks/>
-        public event UpdateClientCompletedEventHandler UpdateClientCompleted;
-        
-        /// <remarks/>
-        public event ListarClientesCompletedEventHandler ListarClientesCompleted;
-        
-        /// <remarks/>
-        public event PegarClientePorEmailCompletedEventHandler PegarClientePorEmailCompleted;
-        
-        /// <remarks/>
-        public event InsertContaCompletedEventHandler InsertContaCompleted;
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/InsertClient", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string InsertClient([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Cliente cliente) {
-            object[] results = this.Invoke("InsertClient", new object[] {
-                        cliente});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void InsertClientAsync(Cliente cliente) {
-            this.InsertClientAsync(cliente, null);
-        }
-        
-        /// <remarks/>
-        public void InsertClientAsync(Cliente cliente, object userState) {
-            if ((this.InsertClientOperationCompleted == null)) {
-                this.InsertClientOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsertClientOperationCompleted);
-            }
-            this.InvokeAsync("InsertClient", new object[] {
-                        cliente}, this.InsertClientOperationCompleted, userState);
-        }
-        
-        private void OnInsertClientOperationCompleted(object arg) {
-            if ((this.InsertClientCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.InsertClientCompleted(this, new InsertClientCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/UpdateClient", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string UpdateClient([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Cliente cliente) {
-            object[] results = this.Invoke("UpdateClient", new object[] {
-                        cliente});
-            return ((string)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void UpdateClientAsync(Cliente cliente) {
-            this.UpdateClientAsync(cliente, null);
-        }
-        
-        /// <remarks/>
-        public void UpdateClientAsync(Cliente cliente, object userState) {
-            if ((this.UpdateClientOperationCompleted == null)) {
-                this.UpdateClientOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateClientOperationCompleted);
-            }
-            this.InvokeAsync("UpdateClient", new object[] {
-                        cliente}, this.UpdateClientOperationCompleted, userState);
-        }
-        
-        private void OnUpdateClientOperationCompleted(object arg) {
-            if ((this.UpdateClientCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.UpdateClientCompleted(this, new UpdateClientCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/ListarClientes", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/WCFCashHomeService.model")]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService2.model")]
         public Cliente[] ListarClientes([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] Cliente cliente) {
             object[] results = this.Invoke("ListarClientes", new object[] {
                         cliente});
@@ -508,7 +267,7 @@ namespace WCFCashHomeDesktopView.localhost {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/WCFCashHomeService.model")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService2.model")]
     public partial class Cliente {
         
         private string cpfField;
@@ -594,7 +353,7 @@ namespace WCFCashHomeDesktopView.localhost {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/WCFCashHomeService.model")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfService2.model")]
     public partial class Conta {
         
         private string emailClienteField;
