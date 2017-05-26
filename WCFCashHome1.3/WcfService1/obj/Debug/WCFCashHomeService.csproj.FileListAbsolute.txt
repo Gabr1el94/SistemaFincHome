@@ -1,0 +1,24 @@
+C:\Users\aluno\Desktop\WcfService1\WcfService1\bin\WcfService1.dll.config
+C:\Users\aluno\Desktop\WcfService1\WcfService1\bin\WcfService1.dll
+C:\Users\aluno\Desktop\WcfService1\WcfService1\bin\WcfService1.pdb
+C:\Users\aluno\Desktop\WcfService1\WcfService1\obj\Debug\WCFCashHomeService.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Desktop\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\aluno\Desktop\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\Rodrigo\Desktop\WCFCashHome1.2\WcfService1\bin\WcfService1.dll.config
+C:\Users\Rodrigo\Desktop\WCFCashHome1.2\WcfService1\bin\WcfService1.dll
+C:\Users\Rodrigo\Desktop\WCFCashHome1.2\WcfService1\bin\WcfService1.pdb
+C:\Users\Rodrigo\Desktop\WCFCashHome1.2\WcfService1\obj\Debug\WCFCashHomeService.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\WCFCashHome1.2\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\Rodrigo\Desktop\WCFCashHome1.2\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\aluno\Downloads\WCFCashHome1.2\WcfService1\obj\Debug\WCFCashHomeService.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Downloads\WCFCashHome1.2\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\aluno\Downloads\WCFCashHome1.2\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\aluno\Downloads\WCFCashHome1.2\WcfService1\bin\WcfService1.dll.config
+C:\Users\aluno\Downloads\WCFCashHome1.2\WcfService1\bin\WcfService1.dll
+C:\Users\aluno\Downloads\WCFCashHome1.2\WcfService1\bin\WcfService1.pdb
+C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WcfService1\bin\WcfService1.dll.config
+C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WcfService1\bin\WcfService1.dll
+C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WcfService1\bin\WcfService1.pdb
+C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WcfService1\obj\Debug\WCFCashHomeService.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\Gabriel Soares\Documents\Visual Studio 2015\Projects\WCFCashHome1.3\WcfService1\obj\Debug\WcfService1.pdb
