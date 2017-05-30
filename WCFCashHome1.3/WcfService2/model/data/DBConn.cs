@@ -11,7 +11,7 @@ namespace WcfService2.model.data
         //tipo responsável para se trabalhar com o sqlserver
         public SqlConnection sqlConn;
         //máquina no qual estará o banco de dados
-        private const string local = "PC-140";
+        private const string local = "GABRIEL-PC\\SQLEXPRESS";
         //nome do banco de dados no qual desejamos nos comunicar
         private const string banco_de_dados = "CashHome";
         //usuário que tenha os privilégios para utilizar o banco de dados

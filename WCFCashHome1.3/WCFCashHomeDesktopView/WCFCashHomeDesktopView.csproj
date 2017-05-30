@@ -55,6 +55,18 @@
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Dados\Class1.cs" />
+    <Compile Include="Apresentacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao.Designer.cs">
+      <DependentUpon>Apresentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +82,12 @@
     </Compile>
     <EmbeddedResource Include="CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao.resx">
+      <DependentUpon>Apresentacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -71,7 +71,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(310, 223);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 23);
+            this.button1.Size = new System.Drawing.Size(116, 32);
             this.button1.TabIndex = 4;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = true;
@@ -81,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 267);
+            this.ClientSize = new System.Drawing.Size(476, 267);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxSenha);
             this.Controls.Add(this.textBoxEmail);
@@ -89,6 +89,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
